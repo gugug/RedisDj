@@ -7,7 +7,7 @@ import re
 
 __author__ = 'gu'
 
-salve_master = {'gu': '192.168.235.51','fen':'192.168.235.41'}
+salve_master = {'gu': '192.*.*.*','fen':'192.*.*.*'}
 
 def scp_to_master(file_name, YOURID):
     """
@@ -24,7 +24,7 @@ def scp_to_master(file_name, YOURID):
         pass
     else:
         print '上传....'
-        scp_chmod = 'scp -p ' + stats_txt + ' gu@192.168.235.51:/home/gu/PycharmProjects/RedisDj/documents/topic/'+topic[-1]
+        scp_chmod = 'scp -p ' + stats_txt + ' username@192.*.*.*:/home/username/PycharmProjects/RedisDj/documents/topic/'+topic[-1]
         is_succeed = os.system(scp_chmod)
         if is_succeed:
             print "休眠5s, 再次尝试上传master"
