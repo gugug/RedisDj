@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'RedisDj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'redisyq',#'fig',
-        'USER':'root',#'fig',
-        'PASSWORD':'111222',#'fig',
-        'HOST':'127.0.0.1',#'192.168.235.36',#'192.168.235.36',#'127.0.0.1',#'192.168.1.120', #'192.168.1.26',
+        'NAME': 'redisyq',
+        'USER':'username',
+        'PASSWORD':'password',
+        'HOST':'127.0.0.1',
         'PORT':'3306',
     }
 }
